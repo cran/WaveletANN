@@ -1,8 +1,9 @@
-import("fracdiff")
-import("forecast")
-import("stats")
-import("wavelets")
-export(WaveletFittingann)
-export(WaveletFitting)
-exportPattern("^[^\\.]")
 
+
+export(WaveletFitting)
+export(WaveletFittingann)
+import("Metrics",except=accuracy)
+import(forecast)
+import(fracdiff)
+import(stats)
+import(wavelets)
